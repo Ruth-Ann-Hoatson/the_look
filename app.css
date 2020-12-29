@@ -1,0 +1,513 @@
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.main , .contact_body  {
+    background-image: url('master_background.png');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover; 
+    width:100%;
+    /* background-color:#2f614e;  */
+} 
+    /* Navigation section */
+
+.nav_main{
+    display:flex;
+    justify-content: center;
+    margin-top:.5rem;
+    margin:auto;
+}
+
+.nav_link{
+    padding:1.5rem;
+    margin:1rem;
+    display: block;
+    background-color: beige;
+    color:green;
+    text-decoration: none; 
+    text-align: center; 
+}
+
+a:link{
+    text-decoration: none;
+    
+}
+a:visited{
+    text-decoration: none;
+}
+
+
+
+/* Home Section */
+.home{
+    position: relative;
+}
+
+.brand_name , .brand_slogan , .home_img{
+    margin:auto;
+    display: block;
+    width:30rem;
+    color:white;
+}
+
+.brand_name{
+    font-size:4rem;
+}
+.brand_slogan{
+    display:block;
+    margin:auto;
+
+}
+
+.home_img, .contact_img {
+    width:5rem;
+    height:5rem;
+    position: absolute;
+    top:0rem;
+    left:17rem;
+
+    border-radius: 50%;
+    border:white solid 2px;
+}
+
+.home_frontdesk{
+    width:39%;
+    margin:auto;
+    display:block;
+    margin-top:3rem;
+    border:3px solid white;
+    transition: transform 1s;
+    
+}
+
+.home_frontdesk:hover{
+    transform: scale(1.1);
+   
+}
+
+/* Footer Section  */
+
+.copyright{
+    display:block;
+    width:27rem;
+    margin:auto;
+    margin-top:2rem;
+    color:white;
+}
+
+/* About Section */
+.about{
+        border:white 2px solid;
+        width:30rem;
+        margin:auto;
+        color:white;
+        padding:1.5rem;
+        margin-top:5rem;
+        text-align: center;
+        font-size:30px;
+
+
+    } 
+.row{
+    display:inline-block;
+    width:100%;
+}
+
+.col-md-6{
+    position:relative;
+    min-height:1px;
+    float:left;
+    width:50%;
+}
+
+
+.about_img{
+    width:100%;
+    margin:auto;
+}
+
+/* Menu Section */
+
+.menu_body{
+ background-color:#2f614e; 
+}
+
+
+.pricelist_menu{
+    display:block;
+    width:100%;
+    margin:auto;
+}
+  /* Contact Section */
+
+  .contact{
+        margin-left:0;
+        margin-top:10rem;
+       
+  }
+  .contact_block{
+      position: relative;
+      width:20rem;
+      height:12rem;
+      margin:auto;
+      background-color:beige;
+      padding:2rem;
+     
+  }
+
+  .contact_name{
+      margin:auto 2rem;
+      font-size:3rem;
+  }
+  .fab, .fas, .far{
+    position:relative;
+    margin-left:.9rem;
+    color:grey;
+    margin-right:2rem;
+}
+
+
+.fa{
+    position:absolute;
+     
+}
+
+ .scale{
+    transition: transform .3s; 
+ }
+
+ .scale:hover{
+    transform: scale(1.2);
+    color:green;
+ }
+
+
+.contact_number , .contact_email, .contact_instagram{
+    position:absolute;
+  
+    font-size:1.2rem;
+    font-weight: 800;
+
+}
+
+.contact_number{
+    top:8.3rem;
+    left:8rem;
+}
+.contact_email{
+    top:11rem;
+    right:1rem;
+}
+
+.contact_instagram{
+    top:5.6rem;
+    right:2.6rem;
+}
+
+.fa-instagram{
+top:1rem;
+}
+
+.fa-phone-square{
+top:4rem;
+right:5rem;
+}
+
+.fa-envelope{
+top:7rem;
+right:10rem;
+
+}
+
+  /* Media Queries */
+
+  @media all and (max-width:1440px){
+
+
+    .contact_img{
+        top:1rem;
+        left:8rem;
+    }
+}
+
+  @media all and (max-width:1024px){
+    .home_img{
+        left:9.6rem;  
+    }
+
+    .contact_img{
+        top:1.5rem;
+        left:9rem;
+    }
+
+
+
+
+    .contact_number{
+        left:8rem;
+    }
+
+    .about{
+        width:25rem;
+        margin-top:0rem;
+    } 
+    
+}
+
+@media all and (max-width:768px){
+ 
+    .brand_name {
+        margin-left:15rem;
+    }
+
+    .brand_slogan{
+        margin-left:15rem;
+    }
+
+
+    .home_img{
+        width:5rem;
+        height:5rem;
+        left:8rem;
+       
+    }
+
+    .copyright{
+        text-align: center;
+        width:85%;
+        
+        
+    }
+
+    .row{
+        display:inline-block;
+        width:100%;
+    }
+    
+    .col-md-6{
+        position:relative;
+        min-height:1px;
+        float:left;
+        width:100%;
+    }
+
+    .about{
+        width:30rem;
+        margin-top:2rem;
+    }
+
+    .menu_cards{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+  
+  
+    .contact{
+        margin-top:5rem;
+    }
+      .contact_block{
+        padding-top:1rem;
+        padding-bottom:2.8rem;
+          
+    }
+
+    .contact_number{
+        top:7.3rem;
+    }
+    .contact_email{
+        top:10rem;
+    }
+    
+    .contact_instagram{
+        top:4rem;
+    }
+
+    .contact_img{
+        width:4rem;
+        height:4rem;
+        top:1.8rem;
+        left:2rem;
+    }
+    
+}
+
+@media all and (max-width:425px){
+
+    .nav_main{
+        width:85%;
+        display:block;
+        padding:0;
+        margin-left:0rem;   
+    }
+
+    .nav_link{
+        width:100%;
+        margin-top:.5rem;
+        
+
+    }
+
+    .brand_name {
+        margin-left:5rem;
+    }
+
+    .brand_slogan{
+        margin-left:5rem;
+    }
+
+    .copyright{
+        margin-top:2rem;
+    }
+
+    .home_frontdesk{
+        width:35rem;
+        
+    }
+
+    .about{
+        width:20rem;
+        margin:2.5rem;
+        font-size:20px;
+        padding:.2rem;
+    }
+
+    .about_img{
+        width:92%;
+        margin:auto;
+        margin-left:1rem;
+    }
+
+    .contact_block{
+        margin-top:5rem;
+        width:100%;
+          
+    }
+
+    .copyright{
+       width:65%;
+       margin-left:auto;
+       font-size:12px;
+        
+    }
+
+    .pricelist_menu{
+        display:block;
+        width:80%;
+    }
+
+    .contact{
+        margin-left:-1rem;
+    }
+
+.contact_number{
+    left:6.5rem;
+}
+
+.contact_email{
+    right:10rem;
+}
+
+.contact_instagram{
+    right:11rem;
+}
+.contact_img{
+    left:2rem;
+    top:.3rem;
+}
+    
+}
+
+
+@media all and (max-width:375px){
+
+
+    .nav_main{
+        width:80%; 
+    }
+
+    .about{
+        width:18rem;
+        margin:2rem;
+    }
+
+    .about_img{
+        width:95%;
+        margin-left:.5rem;
+    }
+
+    .brand_name , .brand_slogan {
+        margin-left:3rem;
+        
+    }
+.brand_name{
+    font-size:25px;
+}
+    .home_frontdesk{
+        width:18rem;
+    
+    }
+    .contact_number{
+        left:6rem;
+    }
+    .contact_email{
+        right:7.5rem;
+    }
+    
+    .contact_instagram{
+        right:9rem;
+    }
+
+  
+ 
+}
+
+@media all and (max-width:320px){
+
+    .nav_main{
+        width:75%; 
+    }
+
+    .brand_name {
+        margin-left:2rem;
+    }
+
+
+    .about{
+        width:16rem;
+        margin:1rem;
+    }
+
+    .about_img{
+        width:100%;
+        margin-left:-.2rem;
+    }
+
+
+    .contact_name{
+        margin:auto 1.5rem;
+    }
+
+    .contact_number , .contact_email, .contact_instagram{
+        font-size:1rem;
+    }
+
+
+    .contact_number{
+        left:5.7rem;
+    }
+    .contact_email{
+        right:7rem;
+        top:10.3rem;
+    }
+    
+    .contact_instagram{
+        right:8rem;
+        top:4.7rem;
+    } 
+    
+    .contact_img{
+        left:2rem;
+        
+    }
+}

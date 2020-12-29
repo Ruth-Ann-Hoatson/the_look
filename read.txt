@@ -1,0 +1,30 @@
+Hello there, 
+This website was designed for a Nail and Beauty Salon. 
+My client wanted to showcase her trophical salon in the best possible way.
+
+This website includes the following pages:
+1.index.html (home page)
+2.about.html (this explains what the business is about with images)
+3.menu.html(the treatment menu and pricelist)
+4.contact.html( contact information with the use of icons for links to the various places.)
+
+styles:
+app.css
+
+Images:
+1.frontdesk.jpg
+2.difview.png
+3.beautybar.jpg
+4.logo.png
+5.master_background.png
+6.pricelist.png
+
+External libaries:
+FontAwesome was used for the icons used in the contact.html page.
+
+Responsiveness:
+This website has been developed with responsive design in mind. 
+This website has paid careful attention to phone , tablet and laptop devices.
+
+I hope that you enjoy this site as much as I enjoyed making it.
+Thanks.
